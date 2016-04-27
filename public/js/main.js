@@ -25,6 +25,7 @@ require([
     './filters',
     './services',
     './controllers/navController',
+    './controllers/teamController',
     'angular-route'
 ], function(angular, controllers) {
 
@@ -33,12 +34,13 @@ require([
         'myApp.services',
         'myApp.directives',
         'navController',
+        'teamController',
         'ngRoute'
     ]);
 
     tnhApp.config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: controllers.MyCtrl1});
-        $routeProvider.when('/teams', {templateUrl: 'partials/teams.html', controller: controllers.TeamsCtrl});
+        $routeProvider.when('/home', {templateUrl: 'partials/home.html'});
+        $routeProvider.when('/teams', {templateUrl: 'partials/teams.html'});
         $routeProvider.otherwise({redirectTo: '/home'});
     }]);
 
