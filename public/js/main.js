@@ -28,6 +28,13 @@ require(['angular', './controllers', './directives', './filters', './services', 
         $routeProvider.when('/homePage', {templateUrl: 'partials/homePage.html', controller: controllers.MyCtrl1});
         $routeProvider.when('/teams', {templateUrl: 'partials/teams.html', controller: controllers.TeamsCtrl});
         $routeProvider.otherwise({redirectTo: '/homePage'});
+      }])
+
+      // Nav controller available on every page for location services
+      .controller('navCtrl', ['$scope', '$location', function($scope, $location) {
+        $scope.isActive = function (location) {
+          return location === $location.path();
+        };
       }]);
 
     angular.bootstrap(document, ['myApp']);
