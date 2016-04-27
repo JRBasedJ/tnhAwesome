@@ -37,9 +37,9 @@ require([
     ]);
 
     tnhApp.config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/homePage', {templateUrl: 'partials/homePage.html', controller: controllers.MyCtrl1});
+        $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: controllers.MyCtrl1});
         $routeProvider.when('/teams', {templateUrl: 'partials/teams.html', controller: controllers.TeamsCtrl});
-        $routeProvider.otherwise({redirectTo: '/homePage'});
+        $routeProvider.otherwise({redirectTo: '/home'});
     }]);
 
     angular.bootstrap(document, ['tnhApp']);
