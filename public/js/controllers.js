@@ -11,9 +11,6 @@ define(function() {
     controllers.MyCtrl1 = function() {};
     controllers.MyCtrl1.$inject = [];
 
-    controllers.MyCtrl2 = function() {};
-    controllers.MyCtrl2.$inject = [];
-
     controllers.TeamsCtrl = function($scope) {
 
         $scope.teamList = [];

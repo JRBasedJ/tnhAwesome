@@ -26,9 +26,7 @@ require(['angular', './controllers', './directives', './filters', './services', 
     angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 'ngRoute']).
       config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/homePage', {templateUrl: 'partials/homePage.html', controller: controllers.MyCtrl1});
-        $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: controllers.MyCtrl2});
         $routeProvider.when('/teams', {templateUrl: 'partials/teams.html', controller: controllers.TeamsCtrl});
-        $routeProvider.otherwise({redirectTo: '/view1'});
         $routeProvider.otherwise({redirectTo: '/homePage'});
       }]);
 
