@@ -27,12 +27,9 @@ require(['angular', './controllers', './directives', './filters', './services', 
       config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/homePage', {templateUrl: 'partials/homePage.html', controller: controllers.MyCtrl1});
         $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: controllers.MyCtrl2});
-<<<<<<< HEAD
         $routeProvider.when('/teams', {templateUrl: 'partials/teams.html', controller: controllers.TeamsCtrl});
         $routeProvider.otherwise({redirectTo: '/view1'});
-=======
         $routeProvider.otherwise({redirectTo: '/homePage'});
->>>>>>> 690b00590c03bc55c276ed877384efa5c2b975bd
       }]);
 
     angular.bootstrap(document, ['myApp']);
