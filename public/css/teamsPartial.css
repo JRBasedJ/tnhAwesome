@@ -1,0 +1,17 @@
+.teamsPartial .teamCol {
+    background-color: #7A9437;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.teamsPartial .teamCol .teamName {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 32px;
+}
+
+.teamsPartial .teamCol .projects {
+    margin-bottom: 30px;
+}

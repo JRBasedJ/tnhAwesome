@@ -1,0 +1,15 @@
+<div class="teamsPartial container row">
+    <div class="teamCol col-md-3" ng-repeat="team in teamList">
+        <div class="teamName" ng-bind="team.name"></div>
+
+        <h3 ng-if="team.projects.length > 0">Projects:</h3>
+        <div class="projects list-group" ng-repeat="project in team.projects">
+            <span class="list-group-item" ng-bind="project"></span>
+        </div>
+
+        <h3 ng-if="team.members.length > 0">Members:</h3>
+        <div class="members list-group" ng-repeat="member in team.members">
+            <span class="member list-group-item" ng-bind="member"></span>
+        </div>
+    </div>
+</div>

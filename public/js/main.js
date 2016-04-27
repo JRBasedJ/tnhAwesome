@@ -27,6 +27,7 @@ require(['angular', './controllers', './directives', './filters', './services', 
       config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: controllers.MyCtrl1});
         $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: controllers.MyCtrl2});
+        $routeProvider.when('/teams', {templateUrl: 'partials/teams.html', controller: controllers.TeamsCtrl});
         $routeProvider.otherwise({redirectTo: '/view1'});
       }]);
 
