@@ -20,19 +20,12 @@ requirejs.config({
 
 require([
     'angular',
-    './controllers',
-    './directives',
-    './filters',
-    './services',
     './controllers/navController',
     './controllers/teamController',
     'angular-route'
-], function(angular, controllers) {
+], function(angular) {
 
     var tnhApp = angular.module('tnhApp', [
-        'myApp.filters',
-        'myApp.services',
-        'myApp.directives',
         'navController',
         'teamController',
         'ngRoute'
