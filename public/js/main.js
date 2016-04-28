@@ -22,6 +22,7 @@ require([
     'angular',
     './controllers/navController',
     './controllers/teamController',
+    './directives/exampleDirective',
     './services/exampleService',
     'angular-route'
 ], function(angular) {
@@ -29,6 +30,7 @@ require([
     var tnhApp = angular.module('tnhApp', [
         'navController',
         'teamController',
+        'exampleDirective',
         'exampleService',
         'ngRoute'
     ]);
