@@ -23,6 +23,7 @@ require([
     './controllers/navController',
     './controllers/teamController',
     './directives/exampleDirective',
+    './filters/exampleFilter',
     './services/exampleService',
     'angular-route'
 ], function(angular) {
@@ -31,6 +32,7 @@ require([
         'navController',
         'teamController',
         'exampleDirective',
+        'exampleFilter',
         'exampleService',
         'ngRoute'
     ]);
