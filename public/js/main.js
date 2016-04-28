@@ -22,12 +22,14 @@ require([
     'angular',
     './controllers/navController',
     './controllers/teamController',
+    './services/exampleService',
     'angular-route'
 ], function(angular) {
 
     var tnhApp = angular.module('tnhApp', [
         'navController',
         'teamController',
+        'exampleService',
         'ngRoute'
     ]);
 
