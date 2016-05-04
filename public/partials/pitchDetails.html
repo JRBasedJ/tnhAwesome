@@ -1,0 +1,15 @@
+<div class="pitchDetailsPartial" ng-controller="pitchDetailsController">
+    <h1>Pitch Details</h1>
+    <h2 ng-bind="pitch.name"></h2>
+
+    <h3>Description:</h3>
+    <blockquote class="blockquote-reverse">
+        <p ng-bind="pitch.description"></p>
+    </blockquote>
+
+    <h3 ng-if="pitch.members.length > 0">Members:</h3>
+    <div class="list-group" ng-repeat="member in pitch.members">
+        <span class="list-group-item" ng-bind="member"></span>
+    </div>
+
+</div>
