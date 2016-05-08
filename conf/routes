@@ -6,5 +6,12 @@
 # Home page
 GET        /                                 controllers.Application.index()
 
+# API
+POST       /users/new                        controllers.Users.create()
+GET        /users/:id                        controllers.Users.get(id: Long)
+GET        /users                            controllers.Users.list()
+DELETE     /users/:id                        controllers.Users.delete(id: Long)
+PUT        /users/update                     controllers.Users.update()
+
 # Map the JS resource paths
 GET        /*file                            controllers.Assets.versioned(path="/public", file: Asset)

@@ -25,7 +25,7 @@ require([
     './controllers/pitchDetailsController',
     './directives/exampleDirective',
     './filters/exampleFilter',
-    './services/exampleService',
+    './services/userServices',
     'angular-route'
 ], function(angular) {
 
@@ -35,7 +35,7 @@ require([
         'pitchDetailsController',
         'exampleDirective',
         'exampleFilter',
-        'exampleService',
+        'userServices',
         'ngRoute'
     ]);
 
