@@ -20,7 +20,7 @@ requirejs.config({
 
 require([
     'angular',
-    './controllers/navController',
+    './controllers/headerControllers',
     './controllers/teamController',
     './controllers/pitchDetailsController',
     './directives/exampleDirective',
@@ -30,7 +30,7 @@ require([
 ], function(angular) {
 
     var tnhApp = angular.module('tnhApp', [
-        'navController',
+        'headerControllers',
         'teamController',
         'pitchDetailsController',
         'exampleDirective',
@@ -43,6 +43,8 @@ require([
         $routeProvider.when('/home', {templateUrl: 'partials/home.html'});
         $routeProvider.when('/teams', {templateUrl: 'partials/teams.html'});
         $routeProvider.when('/pitch/:pitchId', {templateUrl: 'partials/pitchDetails.html'});
+        $routeProvider.when('/login', {templateUrl: 'partials/login.html'});
+        $routeProvider.when('/register', {templateUrl: 'partials/register.html'});
         $routeProvider.otherwise({redirectTo: '/home'});
     }]);
 
