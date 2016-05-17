@@ -23,6 +23,7 @@ require([
     './controllers/headerControllers',
     './controllers/teamController',
     './controllers/pitchDetailsController',
+    './controllers/pitchController',
     './directives/exampleDirective',
     './filters/exampleFilter',
     './services/userServices',
@@ -33,6 +34,7 @@ require([
         'headerControllers',
         'teamController',
         'pitchDetailsController',
+        'pitchController',
         'exampleDirective',
         'exampleFilter',
         'userServices',
@@ -45,6 +47,7 @@ require([
         $routeProvider.when('/pitch/:pitchId', {templateUrl: 'partials/pitchDetails.html'});
         $routeProvider.when('/login', {templateUrl: 'partials/login.html'});
         $routeProvider.when('/register', {templateUrl: 'partials/register.html'});
+        $routeProvider.when('/submitPitch', {templateUrl: 'partials/submitPitch.html'});
         $routeProvider.otherwise({redirectTo: '/home'});
     }]);
 
