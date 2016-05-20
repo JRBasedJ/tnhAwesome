@@ -1,31 +1,29 @@
 <div class="homePartial" ng-controller="pitchController">
 
-    <div>
-        <h1>Welcome</h1>
-    </div>
-    <div class="btnHolder" style="position:absolute; right:0; margin-right:0px;">
+    <div class="btnHolder">
         <div class="btn-group" role="group">
             <button ng-click="createPitch()" type="button" class="btn">Pitch a new idea!</button>
         </div>
     </div>
 
-    <br><br><br><br><br><br>
+    <h1>Welcome</h1>
+
 
     <!--PITCH TEMPLATE-->
-    <div class="panel panel-default">
+    <div class="panel panel-default" ng-repeat="pitch in pitches">
         <div class="panel-body">
             <div class="col-md-1">
-                <div id="user-pic">
+                <div class="user-pic">
                     USER
                     PIC
                 </div>
             </div>
             <div class="col-md-8">
-                <h4>Pitch Title</h4>
-                <p>this is a pitch description.</p>
+                <h4 ng-bind="pitch.title"></h4>
+                <p ng-bind="pitch.description"></p>
             </div>
             <div class="col-md-2">
-                <button id="pitch-detail-button" class="btn btn-primary">Detail</button>
+                <button class="pitch-detail-button" class="btn btn-primary" ng-click="viewPitch(pitch.id)">Detail</button>
             </div>
         </div>
     </div>

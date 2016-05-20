@@ -27,6 +27,7 @@ require([
     './directives/exampleDirective',
     './filters/exampleFilter',
     './services/userServices',
+    './services/pitchServices',
     'angular-route'
 ], function(angular) {
 
@@ -38,6 +39,7 @@ require([
         'exampleDirective',
         'exampleFilter',
         'userServices',
+        'pitchServices',
         'ngRoute'
     ]);
 

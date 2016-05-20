@@ -1,7 +1,12 @@
-#pitch-detail-button {
-    margin-top: 1em;
+/* Pitch a new idea */
+.homePartial .btnHolder {
+    position: absolute;
+    right: 0;
+    margin-right: 35px;
 }
 
-#user-pic {
-    margin-top: 1em;
+/* Detail Button */
+.homePartial .pitch-detail-button {
+    display: inline-block;
+    vertical-align: middle;
 }
