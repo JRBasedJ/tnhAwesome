@@ -18,10 +18,13 @@ define(['angular'], function(angular) {
 
         function refreshPitches() {
             // TODO: Implement service call to back end with promises etc.
-            //pitchService.getPitches().then(function(results) {
-            //   $scope.pitches = results;
-            //});
-            $scope.pitches = pitchService.getPitches();
+            console.log('Called refreshPitches() in controller');
+            pitchService.getPitches().then(function(results) {
+                console.log('Got promise from getPitches()');
+                console.log(results);
+               $scope.pitches = results;
+            });
+            //$scope.pitches = pitchService.getPitches();
         }
 
         $scope.createPitch = function() {
