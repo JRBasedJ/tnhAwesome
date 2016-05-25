@@ -13,5 +13,12 @@ GET        /users                            controllers.Users.list()
 DELETE     /users/:id                        controllers.Users.delete(id: Long)
 PUT        /users/update                     controllers.Users.update()
 
+POST       /pitches/new/:userId              controllers.Pitches.create(userId: Long)
+GET        /pitches/:id                      controllers.Pitches.get(id: Long)
+GET        /pitches                          controllers.Pitches.list()
+PUT        /pitches/update                   controllers.Pitches.update()
+DELETE     /pitches/:id                      controllers.Pitches.delete(id: Long)
+
+
 # Map the JS resource paths
 GET        /*file                            controllers.Assets.versioned(path="/public", file: Asset)
